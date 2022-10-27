@@ -26,7 +26,8 @@ button {
   z-index: 1;
   position: absolute;
   background-color: white;
-  width: 100vw;
+  width: 99vw;
+  left: 1vw;
 }
 
 button:hover .hidden {
@@ -36,7 +37,7 @@ button:hover .hidden {
 /* #nav1 {} */
 
 #first {
-  background: -moz-radial-gradient(bottom right, green, blue, purple, red);
+  background: -moz-radial-gradient(bottom right,rgb(76, 245, 76), rgb(55, 186, 247), rgb(240, 67, 211), rgb(255, 85, 85));
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -92,7 +93,7 @@ button:hover .hidden {
   padding: 4px;
 }
 
-div > h1, h2, h3, p {
+div > h1, h2, h3, h4, p {
   padding: 20px 10px 2px 20px;
 }
 
@@ -111,7 +112,7 @@ section > h1, h2, p {
 }
 
 .prod3 {
-  background-color: rgb(100, 34, 100);
+  background-color: rgb(147, 177, 223);
   background-size: 26vw 71vh;
 }
 
@@ -153,11 +154,16 @@ section > h1, h2, p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  color: white;
 }
 
 .prod8 {
-  background-color: rgb(100, 34, 100);
+  background-color: rgb(129, 46, 129);
   background-size: 26vw 71vh;
+  color: white;
+}
+.prod8 a{
+  color: white;
 }
 
 .prod9 {
@@ -229,8 +235,19 @@ section > h1, h2, p {
 footer {
   background-color: #f0f0f0;
   width: 100vw;
-  height: 95vh;
+  height: auto;
+  font-size: small;
+  padding: 10px;
 }
+
+#footer-links{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+/* #footer-comp-info{
+  width: 100%;
+} */
+
 
 .h_ul {
   list-style: none;
@@ -244,6 +261,6 @@ footer {
 
 .v_ul {
   list-style: none;
-  padding: 20px;
+  padding-left: 10px;
   line-height: 25px;
 }
