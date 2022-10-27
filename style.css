@@ -1,108 +1,249 @@
 body {
-    margin: 0;
-    background-color: white;
+  margin: 0;
+  background-color: white;
 }
 
 header {
-    background-color: white;
-    height: 7vh;
-    padding-left: 2vw;
-    padding-top: 10px;
-    /* display: flex; */
-    /* justify-content: center; */
-    align-items: center;
+  background-color: white;
+  height: 7vh;
+  padding-left: 2vw;
+  padding-top: 10px;
+  /* display: flex; */
+  /* justify-content: center; */
+  align-items: center;
 }
 
-button{
-    background-color: white;
-    display: inline-block;
-    text-align: center;
-    border: none;
+button {
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  padding-left: 20px;
+}
+
+.hidden {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  background-color: white;
+  width: 100vw;
+}
+
+button:hover .hidden {
+  display: block;
 }
 
 /* #nav1 {} */
 
 #first {
-    background-color: pink;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-left: 6vw;
-    padding-right: 10vw;
+  background: -moz-radial-gradient(bottom right, green, blue, purple, red);
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 6vw;
+  padding-right: 10vw;
+}
+
+#first div {
+  max-width: 45%;
+  flex: 1;
+}
+
+#first > img {
+  flex: 2;
 }
 
 #nav2 {
-    background-color: white;
-    height: 10vh;
-    /* display: flex;
-    flex-direction: row; */
-    justify-content: center;
-    align-items: center;
+  background-color: white;
+  height: 10vh;
+  min-width: 50vw;
+  justify-content: center;
+  align-items: center;
 }
 
 #second {
-    background-color: aquamarine;
-    height: 160vh;
-    padding: 2vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
+  background-color: white;
+  height: 160vh;
+  padding: 2vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
- .prod{
-    background-color: red;
-    height: 70vh;
-    width: 25vw;
-    margin: 2vw;
-    padding: 4px;
- }
- .prod2{
-    background-color: red;
-    height: 70vh;
-    width: 54vw;
-    margin: 2vw;
- }
+
+.prod1,
+.prod2,
+.prod3,
+.prod4,
+.prod5,
+.prod6,
+.prod7,
+.prod8,
+.prod9,
+.prod10,
+.prod11 {
+  background-color: red;
+  height: 70vh;
+  width: 25vw;
+  margin: 2vw;
+  padding: 4px;
+}
+
+div > h1, h2, h3, p {
+  padding: 20px 10px 2px 20px;
+}
+
+section > h1, h2, p {
+  padding: 20px;
+}
+
+.prod1 {
+  background-image: url(images/PS-campaign-homepage-single-desktop_v6.jpeg);
+  background-size: 26vw 71vh;
+}
+
+.prod2 {
+  background-image: url(images/AX-2022-single-desktop-v2.jpeg);
+  background-size: 26vw 71vh;
+}
+
+.prod3 {
+  background-color: rgb(100, 34, 100);
+  background-size: 26vw 71vh;
+}
+
+.prod4 {
+  background-image: url(images/Premiere-Pro-double-desktop.jpeg);
+  background-size: 60vw 71vh;
+  height: 70vh;
+  width: 54vw;
+  margin: 2vw;
+}
+
+.prod5 {
+  background-image: url(images/Homepage.Acrobat_powerhouse_pod.background.420x500.jpg.img.jpg);
+  background-size: 26vw 71.5vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.prod6 {
+  background-image: url(images/Homepage.Acrobat_powerhouse_pod.background.420x500.jpg.img.jpg);
+  background-size: 26vw 71vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.prod7 {
+  background-size: 90% auto;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.prod8 {
+  background-color: rgb(100, 34, 100);
+  background-size: 26vw 71vh;
+}
+
+.prod9 {
+  background-image: url(images/EML-homepage-single-desktop-1_v2.jpeg);
+  background-size: 26vw 71vh;
+}
+
+.prod10 {
+  background-image: url(images/EML-homepage-single-desktop-2_v2.jpeg);
+  background-size: 26vw 71vh;
+}
+
+.prod11 {
+  background-color: rgb(112, 255, 255);
+  background-size: 26vw 71vh;
+}
 
 #third {
-    background-color: pink;
-    height:100vh;
+  background-image: url(images/EML-Got-It_triple-desktop.jpeg);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  background-size: auto 101vh;
+  background-position: 50%;
+  height: 100vh;
+}
+
+#third div {
+  color: white;
+  max-width: 40vw;
 }
 
 #fourth {
-    background-color:bisque;
-    height: 90vh;
-    padding: 2vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  background-color: white;
+  height: 90vh;
+  padding: 2vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 #fifth {
-    background-color: red;
-    height: 100vh;
+  background-image: url(images/DX-Marquee-triple-desktop.jpeg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: 90%;
+  height: 101vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
 }
 
 #sixth {
-    background-color:bisque;
-    height: 90vh;
-    padding: 2vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  background-color: white;
+  height: 90vh;
+  padding: 2vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.h_ul{
-    list-style: none;
-    display:flex
+footer {
+  background-color: #f0f0f0;
+  width: 100vw;
+  height: 95vh;
 }
-.v_ul{
-    list-style: none;
+
+.h_ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.h_ul li {
+  padding-left: 20px;
+}
+
+.v_ul {
+  list-style: none;
+  padding: 20px;
+  line-height: 25px;
 }
