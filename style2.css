@@ -142,19 +142,24 @@
   }
 
   #third {
-    background-image: url(images/EML-Got-It_triple-desktop.jpeg);
+    background-image: url(images/EML-Got-It_triple-mobile.jpeg);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
     background-size: auto 50vw;
     background-position: 50%;
+    background-repeat: no-repeat;
     height: 50vw;
+    margin-bottom: 250px;
   }
 
   #third div {
-    color: white;
-    max-width: 40vw;
+    color: black;
+    max-width: 60vw;
+    position: relative;
+    right: 300px;
+    top: 400px;
   }
 
   #fourth {
@@ -169,8 +174,8 @@
   }
 
   #fifth {
-    background-image: url(images/DX-Marquee-triple-desktop.jpeg);
-    background-size: 100vw 40vw;
+    background-image: url(images/DX-Marquee-triple-mobile.jpeg);
+    background-size: 100vw 60vw;
     background-repeat: no-repeat;
     background-position: 90%;
     height: 650px;
@@ -179,7 +184,13 @@
     justify-content: center;
     align-items: flex-start;
     color: white;
-    margin-top: 1150px;
+    margin-top: 1200px;
+    margin-bottom: 320px;
+  }
+  #fifth div{
+    position: relative;
+    top:450px;
+    color: black
   }
 
   #sixth {
