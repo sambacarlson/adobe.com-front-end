@@ -1,6 +1,8 @@
 body {
   margin: 0;
   background-color: white;
+  /* max-width: 1920px;
+  max-height: 1080px; */
 }
 
 header {
@@ -20,6 +22,12 @@ button {
   border: none;
   padding-left: 20px;
 }
+.blue-button{
+  border-radius:8px;
+  background-color:rgb(69, 161, 248); 
+  color: white;
+  padding: 5px;
+}
 
 .hidden {
   display: none;
@@ -30,7 +38,7 @@ button {
   left: 1vw;
 }
 
-button:hover .hidden {
+button:focus .hidden {
   display: block;
 }
 
@@ -38,27 +46,29 @@ button:hover .hidden {
 
 #first {
   background: -moz-radial-gradient(bottom right,rgb(76, 245, 76), rgb(55, 186, 247), rgb(240, 67, 211), rgb(255, 85, 85));
-  height: 100vh;
+  /* height: 100vh; */
+  height: 50vw;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
   padding-left: 6vw;
   padding-right: 10vw;
-}
-
-#first div {
-  max-width: 45%;
-  flex: 1;
 }
 
 #first > img {
   flex: 2;
 }
 
+#first-div{
+  position: absolute;
+  top: 120px;
+  max-width: 40vw;
+}
+
 #nav2 {
   background-color: white;
-  height: 10vh;
+  height: 50px;
   min-width: 50vw;
   justify-content: center;
   align-items: center;
@@ -66,7 +76,7 @@ button:hover .hidden {
 
 #second {
   background-color: white;
-  height: 160vh;
+  height: auto;
   padding: 2vw;
   display: flex;
   flex-direction: row;
@@ -87,10 +97,14 @@ button:hover .hidden {
 .prod10,
 .prod11 {
   background-color: red;
-  height: 70vh;
-  width: 25vw;
+  height: 470px;
+  /* width: 25%; */
+  width: 346px;
   margin: 2vw;
   padding: 4px;
+  background-size: 355px 480px;
+  background-repeat:no-repeat;
+
 }
 
 div > h1, h2, h3, h4, p {
@@ -103,52 +117,52 @@ section > h1, h2, p {
 
 .prod1 {
   background-image: url(images/PS-campaign-homepage-single-desktop_v6.jpeg);
-  background-size: 26vw 71vh;
 }
 
 .prod2 {
   background-image: url(images/AX-2022-single-desktop-v2.jpeg);
-  background-size: 26vw 71vh;
 }
 
 .prod3 {
   background-color: rgb(147, 177, 223);
-  background-size: 26vw 71vh;
 }
 
 .prod4 {
   background-image: url(images/Premiere-Pro-double-desktop.jpeg);
-  background-size: 60vw 71vh;
-  height: 70vh;
-  width: 54vw;
+  background-size: 60vw 34.5vw;
+  height: 33.5vw;
+  width: 55.5vw;
   margin: 2vw;
 }
 
 .prod5 {
   background-image: url(images/Homepage.Acrobat_powerhouse_pod.background.420x500.jpg.img.jpg);
-  background-size: 26vw 71.5vh;
-  background-repeat: no-repeat;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+.prod5>img{
+  width: 90%; 
+  height: auto;
 }
 
 .prod6 {
   background-image: url(images/Homepage.Acrobat_powerhouse_pod.background.420x500.jpg.img.jpg);
-  background-size: 26vw 71vh;
-  background-repeat: no-repeat;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
+.prod6 img{
+  width: 90%; 
+  height: auto;
+}
 
 .prod7 {
   background-size: 90% auto;
-  background-repeat: no-repeat;
   background-position: bottom center;
   display: flex;
   flex-direction: column;
@@ -156,10 +170,12 @@ section > h1, h2, p {
   align-items: center;
   color: white;
 }
+.prod7 img{
+  width: 90%; height: auto
+}
 
 .prod8 {
   background-color: rgb(129, 46, 129);
-  background-size: 26vw 71vh;
   color: white;
 }
 .prod8 a{
@@ -168,17 +184,14 @@ section > h1, h2, p {
 
 .prod9 {
   background-image: url(images/EML-homepage-single-desktop-1_v2.jpeg);
-  background-size: 26vw 71vh;
 }
 
 .prod10 {
   background-image: url(images/EML-homepage-single-desktop-2_v2.jpeg);
-  background-size: 26vw 71vh;
 }
 
 .prod11 {
   background-color: rgb(112, 255, 255);
-  background-size: 26vw 71vh;
 }
 
 #third {
@@ -187,9 +200,9 @@ section > h1, h2, p {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  background-size: auto 101vh;
+  background-size: auto 50vw;
   background-position: 50%;
-  height: 100vh;
+  height: 50vw;
 }
 
 #third div {
@@ -199,7 +212,7 @@ section > h1, h2, p {
 
 #fourth {
   background-color: white;
-  height: 90vh;
+  height: 40vw;
   padding: 2vw;
   display: flex;
   flex-direction: row;
@@ -210,10 +223,10 @@ section > h1, h2, p {
 
 #fifth {
   background-image: url(images/DX-Marquee-triple-desktop.jpeg);
-  background-size: auto 100%;
+  background-size: 100vw 40vw;
   background-repeat: no-repeat;
   background-position: 90%;
-  height: 101vh;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -223,7 +236,7 @@ section > h1, h2, p {
 
 #sixth {
   background-color: white;
-  height: 90vh;
+  height: 40vw;
   padding: 2vw;
   display: flex;
   flex-direction: row;
@@ -253,6 +266,7 @@ footer {
   list-style: none;
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
 }
 
 .h_ul li {
@@ -263,4 +277,25 @@ footer {
   list-style: none;
   padding-left: 10px;
   line-height: 25px;
+}
+.gray-icons{
+  height:20px; 
+  width: auto;
+}
+
+a:link{
+  color:black;
+  text-decoration:none;
+}
+a:visited{
+color:black;
+}
+s:focus{
+  text-decoration: underline;
+}
+a:hover{
+  text-decoration: underline;
+}
+a:active{
+  text-decoration: underline;
 }
