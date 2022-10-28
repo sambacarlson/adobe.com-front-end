@@ -1,0 +1,235 @@
+@media(max-width: 1336px) {
+
+  #first {
+    background-image: url(images/CC-MAX-triple-tablet.jpeg);
+    background-size: 100vw, auto;
+    height: 50vw;
+    padding-left: 6vw;
+    padding-right: 20px;
+    /* margin-bottom: 220px; */
+    font-size:0.85em;
+    overflow: scroll;
+  }
+  #cc-logo-home{
+    display: none;
+  }
+
+  #first-div {
+    max-width: 90%;
+    position: static;
+    /* right: 90px;
+    top: 0px; */
+  }
+
+  .prod1,
+  .prod2,
+  .prod3,
+  .prod4,
+  .prod5,
+  .prod6,
+  .prod7,
+  .prod8,
+  .prod9,
+  .prod10,
+  .prod11 {
+    background-color: red;
+    height: 500px;
+    /* width: 25%; */
+    width: 80vw;
+    margin: 2vw;
+    padding: 4px;
+    background-size: 81vw 550px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  div > h1,
+  h2,
+  h3,
+  h4,
+  p {
+    padding: 20px 10px 2px 20px;
+  }
+
+  section > h1,
+  h2,
+  p {
+    padding: 20px;
+  }
+
+  .prod1 {
+    background-image: url(images/PS-campaign-homepage-single-desktop_v6.jpeg);
+  }
+
+  .prod2 {
+    background-image: url(images/AX-2022-single-desktop-v2.jpeg);
+  }
+
+  .prod3 {
+    background-color: rgb(147, 177, 223);
+  }
+
+  .prod4 {
+    background-image: url(images/Premiere-Pro-double-desktop.jpeg);
+    background-size: 76vw 42vw;
+    height: 40vw;
+    width: 75vw;
+    margin: 2vw;
+  }
+
+  .prod5 {
+    background-image: url(images/Homepage.Acrobat_powerhouse_pod.background.420x500.jpg.img.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .prod5>img{
+    width: 40%; 
+    height: auto;
+    align-self: flex-end;
+  }
+  .prod5>h3, .prod5>p{
+    align-self: flex-start;
+  }
+
+  .prod6 {
+    background-image: url(images/Homepage.Acrobat_powerhouse_pod.background.420x500.jpg.img.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .prod6 img{
+    width: 40%; 
+    height: auto;
+  }
+
+  .prod7 {
+    background-size: 90% auto;
+    background-position: bottom center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+  .prod7 img{
+    width: 40%; height: auto
+  }
+
+  .prod8 {
+    background-color: rgb(129, 46, 129);
+    color: white;
+  }
+
+  .prod8 a {
+    color: white;
+  }
+
+  .prod9 {
+    background-image: url(images/EML-homepage-single-desktop-1_v2.jpeg);
+  }
+
+  .prod10 {
+    background-image: url(images/EML-homepage-single-desktop-2_v2.jpeg);
+  }
+
+  .prod11 {
+    background-color: rgb(112, 255, 255);
+  }
+
+  #third {
+    background-image: url(images/EML-Got-It_triple-desktop.jpeg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background-size: auto 50vw;
+    background-position: 50%;
+    height: 50vw;
+  }
+
+  #third div {
+    color: white;
+    max-width: 40vw;
+  }
+
+  #fourth {
+    background-color: white;
+    height: 40vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #fifth {
+    background-image: url(images/DX-Marquee-triple-desktop.jpeg);
+    background-size: 100vw 40vw;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    margin-top: 1150px;
+  }
+
+  #sixth {
+    background-color: white;
+    height: 40vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    background-color: #f0f0f0;
+    width: 100vw;
+    height: auto;
+    font-size: small;
+    padding: 10px;
+    margin-top: 1270px;
+  }
+
+  #footer-links {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+  }
+
+  /* #footer-comp-info{
+        width: 100%;
+    } */
+
+  .h_ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .h_ul li {
+    padding-left: 20px;
+  }
+
+  .v_ul {
+    list-style: none;
+    padding-left: 10px;
+    line-height: 25px;
+  }
+
+  .gray-icons {
+    height: 20px;
+    width: auto;
+  }
+}
